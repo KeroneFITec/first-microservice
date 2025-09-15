@@ -82,7 +82,8 @@ jobs:
       uses: aquasecurity/trivy-action@master
       with:
         image-ref: 'first-microservice:latest' # Referência à imagem construída no passo anterior
-        format: 'table'
-        severity: 'CRITICAL,HIGH'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+        #severity: 'CRITICAL,HIGH'
         exit-code: '1'
  
