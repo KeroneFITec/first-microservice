@@ -79,7 +79,7 @@ jobs:
     # Executa a varredura de vulnerabilidades com o Trivy.
     # 'exit-code 1' faz com que o job falhe se qualquer vulnerabilidade crítica ou de alta severidade for encontrada.
     - name: Run Trivy Scan
-      uses: aquasecurity/trivy-action@0.65.0
+      uses: aquasecurity/trivy-action@0.30.0
       with:
         image-ref: 'first-microservice:latest' # Referência à imagem construída no passo anterior
         format: 'sarif'
