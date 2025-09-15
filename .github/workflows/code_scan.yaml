@@ -83,10 +83,10 @@ jobs:
       uses: aquasecurity/trivy-action@0.30.0
       with:
         image-ref: 'first-microservice:latest' # Referência à imagem construída no passo anterior
-        format: 'sarif'
-        output: 'trivy-results.sarif'
+        format: 'table'
         ignore-unfixed: true
         vuln-type: 'os,library'
+        scanners: 'vuln,secret,misconfig'
         severity: 'CRITICAL,HIGH'
-        exit-code: '0'
+        #exit-code: '0'
  
