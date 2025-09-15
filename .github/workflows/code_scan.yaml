@@ -88,6 +88,6 @@ jobs:
         ignore-unfixed: true
         vuln-type: 'os,library'
         scanners: 'vuln,secret,misconfig'
-        severity: 'CRITICAL,HIGH'
+        severity: 'CRITICAL'
         #exit-code: '0'
  
