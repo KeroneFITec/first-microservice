@@ -4,6 +4,7 @@ name: Análise de Segurança
 # Configura o gatilho para o workflow.
 # Ele será executado em cada 'push' ou 'pull request' na branch 'main'.
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
   pull_request:
