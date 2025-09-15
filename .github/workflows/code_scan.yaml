@@ -86,6 +86,8 @@ jobs:
         scan-type: image
         format: 'table'
         ignore-unfixed: true
+        limit-severities-for-sarif: true
+        list-all-pkgs: true
         vuln-type: 'os,library'
         scanners: 'vuln,secret,misconfig'
         severity: 'CRITICAL,HIGH'
