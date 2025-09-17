@@ -26,8 +26,8 @@ jobs:
             <servers>
               <server>
                 <id>wsl_nexus</id>
-                <username>${{ secrets.NEXUS_USERNAME }}</username>
-                <password>${{ secrets.NEXUS_PASSWORD }}</password>
+                <username>user_test</username>
+                <password>user_test</password>
               </server>
             </servers>
           </settings>
