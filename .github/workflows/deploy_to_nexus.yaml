@@ -19,8 +19,10 @@ jobs:
 
       - name: Configure Maven settings.xml
         run: |
-          chmod +x create_settings.sh
-          ./create_settings.sh
+          ls ./first-microservice/./github/workflows
 
-      - name: Build and deploy with Maven
-        run: mvn clean deploy -DskipTests
+#		   chmod +x create_settings.sh
+#          ./create_settings.sh
+
+#      - name: Build and deploy with Maven
+#        run: mvn clean deploy -DskipTests
