@@ -32,7 +32,7 @@ jobs:
             </servers>
           </settings>
           EOF
-          ls /home/runner/./m2
+          ls /home/runner/.m2
           cat /home/runner/.m2/settings.xml
 
       - name: Build and deploy with Maven
