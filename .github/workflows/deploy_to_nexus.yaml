@@ -20,8 +20,8 @@ jobs:
       - name: Configure Maven settings.xml
         run: |
           #!/bin/bash
-          sudo mkdir -p ~/.m2
-          echo > ~/.m2/settings.xml <<EOF
+          mkdir -p /home/runner/.m2
+          echo > /home/runner/.m2/settings.xml <<EOF
           <settings>
             <servers>
               <server>
@@ -32,8 +32,8 @@ jobs:
             </servers>
           </settings>
           EOF
-          ls ~/./m2
-          cat ~/.m2/settings.xml
+          ls /home/runner/./m2
+          cat /home/runner/.m2/settings.xml
 
       - name: Build and deploy with Maven
         run: mvn clean deploy -DskipTests
