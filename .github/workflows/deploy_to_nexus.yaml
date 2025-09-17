@@ -31,6 +31,8 @@ jobs:
             </servers>
           </settings>
           EOF
+          ls ~/./m2
+          cat ~/.m2/settings.xml
 
       - name: Build and deploy with Maven
         run: mvn clean deploy -DskipTests
