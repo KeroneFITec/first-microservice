@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>first-microservice</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>first-microservice</name>
 	<description>Sample Spring application 1</description>
 	<properties>
@@ -51,7 +51,7 @@
 	<distributionManagement>
 	   <repository>
 	      <id>wsl_nexus</id>
-	      <url>http://localhost:8081/repository/maven-centra/</url>
+	      <url>http://localhost:8081/repository/maven-releases/</url>
 	   </repository>
 	</distributionManagement>
 	
