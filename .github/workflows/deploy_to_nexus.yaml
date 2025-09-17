@@ -19,7 +19,7 @@ jobs:
 
       - name: Configure Maven settings.xml
         run: |
-          ls /usr/bin/first-microservice/./github/workflows
+          ls /home/runner/work/first-microservice/./github/workflows
 
 #		   chmod +x create_settings.sh
 #          ./create_settings.sh
