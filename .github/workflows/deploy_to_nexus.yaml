@@ -19,8 +19,9 @@ jobs:
 
       - name: Configure Maven settings.xml
         run: |
+          #!/bin/bash
           mkdir -p ~/.m2
-          cat > ~/.m2/settings.xml <<EOF
+          echo > ~/.m2/settings.xml <<EOF
           <settings>
             <servers>
               <server>
